@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Force Graph - People similarity (Larger Labels)</title>
+    <style>
+        /* Basic CSS to make the graph fill the page */
+        body { margin: 0; overflow: hidden; font-family: sans-serif; }
+        #graph-container { width: 100vw; height: 100vh; display: block; }
+        /* Simple loading/error message style */
+        #message-box { position: absolute; top: 10px; left: 10px; background-color: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 3px; font-size: 12px; z-index: 10; }
+        .error { color: #FF8888; font-weight: bold; }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js" defer></script>
+    <script src="https://d3js.org/d3.v7.min.js" defer></script>
+    <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js" defer></script>
+</head>
+<body>
+    <div id="graph-container"></div>
+    <div id="message-box">Loading...</div>
+
+    <script>
+        // Wait until the DOM is fully loaded and scripts are parsed
+        document.addEventListener('DOMContentLoaded', () => {
+            const msgBox = document.getElementById('message-box');
+
+            try {
+                // --- Check if libraries are loaded ---
+                if (typeof ForceGraph3D === 'undefined') throw new Error("ForceGraph3D library not loaded.");
+                if (typeof THREE === 'undefined') throw new Error("Three.js library not loaded.");
+                if (typeof d3 === 'undefined') throw new Error("D3.js library not loaded.");
+
+                // --- Define D3 Color Scale ---
+                const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+
+                // --- 1. Define Graph Data (8 Nodes) ---
+                const nodeIds = ["Alice", "Annie", "Shyamolee", "George", "Bob", "Angela", "Richard", "David"];
+                const nodes = nodeIds.map(id => ({ id: id }));
+                const links = [
+                    { source: "Alice", target: "Annie", value: 2 }, { source: "Alice", target: "Shyamolee", value: 4 },
+                    { source: "Alice", target: "George", value: 2 }, { source: "Alice", target: "Bob", value: 9 },
+                    { source: "Annie", target: "Shyamolee", value: 1 }, { source: "Annie", target: "Bob", value: 2 },
+                    { source: "Annie", target: "Angela", value: 1 }, { source: "Annie", target: "David", value: 11 },
+                    { source: "Shyamolee", target: "George", value: 2 }, { source: "Shyamolee", target: "Bob", value: 1 },
+                    { source: "Shyamolee", target: "Angela", value: 5 }, { source: "Shyamolee", target: "David", value: 5 },
+                    { source: "George", target: "Bob", value: 5 }, { source: "George", target: "Angela", value: 3 },
+                    { source: "George", target: "Richard", value: 8 }, { source: "George", target: "David", value: 2 },
+                    { source: "Bob", target: "Angela", value: 2 }, { source: "Angela", target: "Richard", value: 8 },
+                    { source: "Angela", target: "David", value: 3 }, { source: "Richard", target: "David", value: 3 }
+                ];
+                // Simple validation for link values
+                links.forEach(link => {
+                    if (typeof link.value !== 'number' || link.value <= 0) {
+                        console.warn(`Link ${link.source}-${link.target} has invalid value: ${link.value}. Defaulting to 1.`);
+                        link.value = 1;
+                    }
+                });
+                const graphData = { nodes, links };
+
+                // --- 2. Initialize the Graph ---
+                const container = document.getElementById('graph-container');
+                const NODE_REL_SIZE = 4;
+                const Graph = ForceGraph3D()(container);
+
+                // --- 3. Configure and Load Data ---
+                Graph.graphData(graphData)
+                    .numDimensions(3)
+                    .backgroundColor('#111111')
+                    .nodeRelSize(NODE_REL_SIZE)
+                    // --- Link Configuration ---
+                    .linkLabel(link => `Similarity: ${link.value}`)
+                    .linkWidth(link => 0.1 + link.value / 4)
+                    // --- Node Configuration ---
+                    .nodeThreeObject(node => {
+                        const group = new THREE.Group();
+                        const sphereMaterial = new THREE.MeshLambertMaterial({
+                            color: colorScale(node.id),
+                            transparent: true,
+                            opacity: 0.85
+                        });
+                        const sphereGeometry = new THREE.SphereGeometry(NODE_REL_SIZE);
+                        const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+                        group.add(sphere);
+
+                        // Text Label
+                        const text = node.id;
+                        const canvas = document.createElement('canvas');
+                        const context = canvas.getContext('2d');
+                        // --- Increased font size ---
+                        const fontSize = 16; // Increased from 12
+                        context.font = `bold ${fontSize}px Sans-Serif`;
+                        const textWidth = context.measureText(text).width;
+                        const canvasWidth = textWidth + 8; // Adjusted padding slightly
+                        const canvasHeight = fontSize + 8; // Adjusted padding slightly
+                        canvas.width = canvasWidth;
+                        canvas.height = canvasHeight;
+                        context.fillStyle = 'rgba(255, 255, 255, 0.9)';
+                        context.font = `bold ${fontSize}px Sans-Serif`; // Ensure font is set again before drawing
+                        context.textAlign = 'center';
+                        context.textBaseline = 'middle';
+                        context.fillText(text, canvasWidth / 2, canvasHeight / 2);
+                        const texture = new THREE.CanvasTexture(canvas);
+                        texture.needsUpdate = true;
+                        const spriteMaterial = new THREE.SpriteMaterial({
+                            map: texture,
+                            depthWrite: false,
+                            transparent: true
+                         });
+                        const sprite = new THREE.Sprite(spriteMaterial);
+                        // --- Increased sprite scale ---
+                        const spriteScale = 0.08; // Increased from 0.06
+                        sprite.scale.set(canvasWidth * spriteScale, canvasHeight * spriteScale, 1.0);
+                        // Adjust position slightly if needed based on new size
+                        sprite.position.y = NODE_REL_SIZE + 4; // Slightly increased offset
+                        group.add(sprite);
+
+                        return group;
+                    });
+
+                // --- 4. Configure Physics Forces ---
+                Graph.d3Force('link')
+                    .distance(link => 100 / link.value)
+                    .strength(link => 0.1 + link.value / 100);
+
+                // --- 5. Update Message ---
+                msgBox.textContent = 'Graph loaded. Drag to rotate, scroll to zoom.';
+
+            } catch (error) {
+                // --- Handle Errors ---
+                console.error("Graph Initialization Error:", error);
+                msgBox.innerHTML = `<span class="error">ERROR: ${error.message} (Check console F12)</span>`;
+            }
+        });
+    </script>
+</body>
+</html>

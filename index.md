@@ -13,7 +13,7 @@ position: 0
 ***
 
 # Bob Lou · he/him
-I find most things interesting, but I am particularly interested in technology and medicine. My long term mission is to improve clinical medicine through artificial intelligence technologies.
+I find most things interesting, but I am particularly interested in technology and health. My long term mission is to improve healthcare through artificial intelligence technologies.
 
 ***
 

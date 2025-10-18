@@ -1,0 +1,634 @@
+<html lang="en"><head>
+
+<script class="injected-ffc2e83d85">
+const IMG_SEARCH_REPLACE_MAP = {"Thomas Keller": ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEYD7sW7nL3yN2S9ruK1h0oLpaQpGZkrvILBjRZj8-tg9A7Kp2QclY6PiqIsjj", "https://thomaskeller.com/biography/"], "oysters and pearls dish": ["https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTd9ZbB3SysuPSxmjpFKGOyba55nBPa9vRYZKW1NwonC9MIdC0TC_SD3-F7Owui", "https://parkerhallberg.com/oysters-and-pearls/"], "sunchoke salad": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-c2CntCDEOLIVu2KB6ZedEY1oGIYdQtVZl37XBU_3AiCOqhQDZ7Y0FpS674WH", "https://www.loveandlemons.com/brussels-sprout-sunchoke-salad/"], "dover sole dish": ["https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTa5uS4ydP7GGU4rHVLPVOmnjJ5WqZUrP81r_5V3f7zu64T-Vb11kJFQhjmQjVw", "https://thehappyfoodie.co.uk/recipes/dover-sole-a-la-meuniere/"], "lobster with truffle": ["https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu7td83lF5jRV2OrymbyyPP_91uVZ1IhkaXgMuHAxqFliKwjD5kkkKT-9M7ytz", "https://truffeshenras.com/en/blogs/dishes/lobster-with-truffle"], "brioche and butter": ["https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXnLvUZ2epJAC8h0-Y0NX-cL7x-wjvAtyIQAKLM92vB1YJq4xb6K8YXW0dJiQK", "https://preppykitchen.com/brioche-bread/"], "smoked poularde dish": ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNy21bElpD_Vg38xCw-gmG4DWKzx_htE6pc-WG8rMEXvfIgnAoYF619Yd-0pKr", "https://www.laurasummers.co.uk/2021/07/04/poularde-a-la-bourgeoise-recipe/"], "lamb prime rib": ["https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu2mayJflqxq0yEr3rAouYn0njFIN6BVSQyCTDda4IoBLHj-i9eE0tFypZ5yEM", "https://www.reddit.com/r/grilling/comments/18r8n6y/enough_prime_rib_pics_i_made_lamb_for_xmas_who/"], "alp blossom cheese dish": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCT8PAZE4VBJCtthnJHzNG5XkYDaW7877_SWwNS5IjSZcYwzARAwRmGTPzKSe_", "https://www.kaeskuche.com/product/alp-blossom/"], "pear panna cotta": ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnuPKEk6qWz1bFzXMqefnfkhhUS5iLYQgwFaUAnP2tqjUk59mzcIvSJ9Qu4yFa", "https://pompomcooks.com/creme-fraiche-panna-cotta-with-poached-pears-sesame-brittle/"], "genmaicha ice cream": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH2MUUnQqG5rJOkQlMBX-ZyvZJXPHEa84Sa1HMxdZsJySplIOmxk2OgzMeU9Sp", "https://nioteas.com/blogs/japanese-teas/genmaicha-ice-cream"], "chocolate mousse lychee": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGlXPFnGmJsbipH8MZqCZhk5D_G9Xrdtl54AE3O6_x3Ord9JxMZ-h0t23fgsyA", "https://plantcrush.co/2018/02/14/2-ingredient-chocolate-mousse-with-citrus-lychee/"], "mignardises pastries": ["https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMUEfuXlXpD4fEGZMi-OkUi7ohfmqyujbHS6NAPSjbOM58Ez70Bldzkjq5W3e7", "https://gastronomia.ca/en/product/sweet-petits-fours/"], "vegetarian oysters and pearls": ["https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRH7hWmq8tfwsGfls5PEnvHea9bjOFf3RwjGnGzcWAVTlUNswvX8NHUsNTrUsbm", "https://www.fooddeco.nl/vegan-oyster-with-an-avocado-pearl/"], "beet carpaccio": ["https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMRDLDINuXrxoaOZHNNxvb3cWOSWdAVFmBFjVoGV0qalB7Ib7-sugYfZ4Jp30p", "https://www.carolinescooking.com/beet-carpaccio/"], "cauliflower polonaise": ["https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh-vRC-AZ3Lu_6Vu09NbBdW6jeM4sCOfaxypZLeampFr5N_QMWj6xubyuCOzZp", "https://www.riverford.co.uk/recipes/cauliflower-polonaise"], "stuffed artichoke dish": ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPUVSJBN4-gvaiwCVHFVPY14jQ4ab9MLnDNIegHffmMC0vzUt08302x9FsY423", "https://cookingontheweekends.com/the-ultimate-stuffed-artichoke-recipe/"], "cabbage rolls consomme": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJgg6neVlDvs1ksNx3wMXBLPNz389-cQSaGmTAHMwoBNiz7zznxsKOAH0uyrU", "https://www.shutterstock.com/image-photo/cabbage-rolls-soup-2261406241"], "pumpkin degustation": ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8OAtgH6aVDCib933Mz1czlnP9K4mIsis55Y8fMz7cBvJjSlbLbUq7qF-KClak", "https://floridafruitgeek.com/2021/11/30/a-new-autumn-tradition-best-flavored-pumpkin-contests/"], "brie terrine": ["https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpDnPgp5j4toR5rsCSYw_KIHFUuYtxF2lyu2Pa5oVwS9LF0kKvqwRcfzosLzg9", "https://www.tortarelli.com.br/terrine-de-queijo-brie-com-pesto-de-salsa-e-couli-de-framboesa/"], "grape dessert": ["https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTPZnmMuSO-v1Grq3hJfC7wzseUKFotw370YksI-ggADnXiQUS4Nkb7DxNBh-R", "https://www.cookiedoughandovenmitt.com/concord-grape-pie-5/"], "honey ice cream": ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNIPOpFBf_xLWfM6ipxbICk1tgG-tlRxv2PsG9oYw2crn5is0Djr4HaT0ElNLd", "https://foolproofliving.com/homemade-vanilla-ice-cream/"], "dark chocolate mousse caramel": ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4zq7FPYjKgvwPptJGuXNrgP27ckaf_Kka5uScSo0XG2epJnvb9B5W0MWRx43U", "https://thefeedfeed.com/nilathetoughcookie/salted-caramel-chocolate-mousse"]};
+const IMG_GEN_REPLACE_MAP = {};
+</script>
+
+
+<script class="injected-ffc2e83d85">
+(function(){'use strict';var y=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,f){if(a==Array.prototype||a==Object.prototype)return a;a[b]=f.value;return a};function z(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var f=a[b];if(f&&f.Math==Math)return f}throw Error("Cannot find global object");}var B=z(this);
+function C(a,b){if(b)a:{var f=B;a=a.split(".");for(var k=0;k<a.length-1;k++){var p=a[k];if(!(p in f))break a;f=f[p]}a=a[a.length-1];k=f[a];b=b(k);b!=k&&b!=null&&y(f,a,{configurable:!0,writable:!0,value:b})}}function E(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}
+function H(a){var b=typeof Symbol!="undefined"&&Symbol.iterator&&a[Symbol.iterator];if(b)return b.call(a);if(typeof a.length=="number")return{next:E(a)};throw Error(String(a)+" is not an iterable or ArrayLike");}function aa(a){return ba(a,a)}function ba(a,b){a.raw=b;Object.freeze&&(Object.freeze(a),Object.freeze(b));return a}function I(){this.l=!1;this.i=null;this.h=void 0;this.g=1;this.o=0;this.j=null}function M(a){if(a.l)throw new TypeError("Generator is already running");a.l=!0}
+I.prototype.m=function(a){this.h=a};function O(a,b){a.j={H:b,I:!0};a.g=a.o}I.prototype.return=function(a){this.j={return:a};this.g=this.o};function P(a,b,f){a.g=f;return{value:b}}function ca(a){this.g=new I;this.h=a}function da(a,b){M(a.g);var f=a.g.i;if(f)return Q(a,"return"in f?f["return"]:function(k){return{value:k,done:!0}},b,a.g.return);a.g.return(b);return R(a)}
+function Q(a,b,f,k){try{var p=b.call(a.g.i,f);if(!(p instanceof Object))throw new TypeError("Iterator result "+p+" is not an object");if(!p.done)return a.g.l=!1,p;var u=p.value}catch(c){return a.g.i=null,O(a.g,c),R(a)}a.g.i=null;k.call(a.g,u);return R(a)}function R(a){for(;a.g.g;)try{var b=a.h(a.g);if(b)return a.g.l=!1,{value:b.value,done:!1}}catch(f){a.g.h=void 0,O(a.g,f)}a.g.l=!1;if(a.g.j){b=a.g.j;a.g.j=null;if(b.I)throw b.H;return{value:b.return,done:!0}}return{value:void 0,done:!0}}
+function ea(a){this.next=function(b){M(a.g);a.g.i?b=Q(a,a.g.i.next,b,a.g.m):(a.g.m(b),b=R(a));return b};this.throw=function(b){M(a.g);a.g.i?b=Q(a,a.g.i["throw"],b,a.g.m):(O(a.g,b),b=R(a));return b};this.return=function(b){return da(a,b)};this[Symbol.iterator]=function(){return this}}function fa(a){function b(k){return a.next(k)}function f(k){return a.throw(k)}return new Promise(function(k,p){function u(c){c.done?k(c.value):Promise.resolve(c.value).then(b,f).then(u,p)}u(a.next())})}
+function S(a){return fa(new ea(new ca(a)))}function ha(){for(var a=Number(this),b=[],f=a;f<arguments.length;f++)b[f-a]=arguments[f];return b}C("globalThis",function(a){return a||B});
+C("Symbol",function(a){function b(u){if(this instanceof b)throw new TypeError("Symbol is not a constructor");return new f(k+(u||"")+"_"+p++,u)}function f(u,c){this.g=u;y(this,"description",{configurable:!0,writable:!0,value:c})}if(a)return a;f.prototype.toString=function(){return this.g};var k="jscomp_symbol_"+(Math.random()*1E9>>>0)+"_",p=0;return b});
+C("Symbol.iterator",function(a){if(a)return a;a=Symbol("Symbol.iterator");y(Array.prototype,a,{configurable:!0,writable:!0,value:function(){return ia(E(this))}});return a});function ia(a){a={next:a};a[Symbol.iterator]=function(){return this};return a}
+C("Promise",function(a){function b(c){this.h=0;this.i=void 0;this.g=[];this.o=!1;var g=this.j();try{c(g.resolve,g.reject)}catch(m){g.reject(m)}}function f(){this.g=null}function k(c){return c instanceof b?c:new b(function(g){g(c)})}if(a)return a;f.prototype.h=function(c){if(this.g==null){this.g=[];var g=this;this.i(function(){g.l()})}this.g.push(c)};var p=B.setTimeout;f.prototype.i=function(c){p(c,0)};f.prototype.l=function(){for(;this.g&&this.g.length;){var c=this.g;this.g=[];for(var g=0;g<c.length;++g){var m=
+c[g];c[g]=null;try{m()}catch(t){this.j(t)}}}this.g=null};f.prototype.j=function(c){this.i(function(){throw c;})};b.prototype.j=function(){function c(t){return function(w){m||(m=!0,t.call(g,w))}}var g=this,m=!1;return{resolve:c(this.C),reject:c(this.l)}};b.prototype.C=function(c){if(c===this)this.l(new TypeError("A Promise cannot resolve to itself"));else if(c instanceof b)this.F(c);else{a:switch(typeof c){case "object":var g=c!=null;break a;case "function":g=!0;break a;default:g=!1}g?this.B(c):this.m(c)}};
+b.prototype.B=function(c){var g=void 0;try{g=c.then}catch(m){this.l(m);return}typeof g=="function"?this.G(g,c):this.m(c)};b.prototype.l=function(c){this.v(2,c)};b.prototype.m=function(c){this.v(1,c)};b.prototype.v=function(c,g){if(this.h!=0)throw Error("Cannot settle("+c+", "+g+"): Promise already settled in state"+this.h);this.h=c;this.i=g;this.h===2&&this.D();this.J()};b.prototype.D=function(){var c=this;p(function(){if(c.A()){var g=B.console;typeof g!=="undefined"&&g.error(c.i)}},1)};b.prototype.A=
+function(){if(this.o)return!1;var c=B.CustomEvent,g=B.Event,m=B.dispatchEvent;if(typeof m==="undefined")return!0;typeof c==="function"?c=new c("unhandledrejection",{cancelable:!0}):typeof g==="function"?c=new g("unhandledrejection",{cancelable:!0}):(c=B.document.createEvent("CustomEvent"),c.initCustomEvent("unhandledrejection",!1,!0,c));c.promise=this;c.reason=this.i;return m(c)};b.prototype.J=function(){if(this.g!=null){for(var c=0;c<this.g.length;++c)u.h(this.g[c]);this.g=null}};var u=new f;b.prototype.F=
+function(c){var g=this.j();c.u(g.resolve,g.reject)};b.prototype.G=function(c,g){var m=this.j();try{c.call(g,m.resolve,m.reject)}catch(t){m.reject(t)}};b.prototype.then=function(c,g){function m(e,d){return typeof e=="function"?function(h){try{t(e(h))}catch(l){w(l)}}:d}var t,w,F=new b(function(e,d){t=e;w=d});this.u(m(c,t),m(g,w));return F};b.prototype.catch=function(c){return this.then(void 0,c)};b.prototype.u=function(c,g){function m(){switch(t.h){case 1:c(t.i);break;case 2:g(t.i);break;default:throw Error("Unexpected state: "+
+t.h);}}var t=this;this.g==null?u.h(m):this.g.push(m);this.o=!0};b.resolve=k;b.reject=function(c){return new b(function(g,m){m(c)})};b.race=function(c){return new b(function(g,m){for(var t=H(c),w=t.next();!w.done;w=t.next())k(w.value).u(g,m)})};b.all=function(c){var g=H(c),m=g.next();return m.done?k([]):new b(function(t,w){function F(h){return function(l){e[h]=l;d--;d==0&&t(e)}}var e=[],d=0;do e.push(void 0),d++,k(m.value).u(F(e.length-1),w),m=g.next();while(!m.done)})};return b});
+function ja(a,b){a instanceof String&&(a+="");var f=0,k=!1,p={next:function(){if(!k&&f<a.length){var u=f++;return{value:b(u,a[u]),done:!1}}k=!0;return{done:!0,value:void 0}}};p[Symbol.iterator]=function(){return p};return p}C("Array.prototype.entries",function(a){return a?a:function(){return ja(this,function(b,f){return[b,f]})}});C("Object.entries",function(a){return a?a:function(b){var f=[],k;for(k in b)Object.prototype.hasOwnProperty.call(b,k)&&f.push([k,b[k]]);return f}});
+C("String.prototype.startsWith",function(a){return a?a:function(b,f){if(this==null)throw new TypeError("The 'this' value for String.prototype.startsWith must not be null or undefined");if(b instanceof RegExp)throw new TypeError("First argument to String.prototype.startsWith must not be a regular expression");var k=this.length,p=b.length;f=Math.max(0,Math.min(f|0,this.length));for(var u=0;u<p&&f<k;)if(this[f++]!=b[u++])return!1;return u>=p}});/*
+
+ Copyright Google LLC
+ SPDX-License-Identifier: Apache-2.0
+*/
+var T=globalThis.trustedTypes,U;function ka(){var a=null;if(!T)return a;try{var b=function(f){return f};a=T.createPolicy("goog#html",{createHTML:b,createScript:b,createScriptURL:b})}catch(f){}return a};function W(a){this.g=a}W.prototype.toString=function(){return this.g+""};function X(a){var b;U===void 0&&(U=ka());a=(b=U)?b.createScriptURL(a):a;return new W(a)};function Y(a){this.h=a}Y.prototype.toString=function(){return this.h};function la(a){var b=window;if(typeof MediaSource!=="undefined"&&a instanceof MediaSource||typeof b.ManagedMediaSource!=="undefined"&&a instanceof b.ManagedMediaSource)return a=URL.createObjectURL(a),new Y(a);b=a.type;b.toLowerCase()==="application/octet-stream"?b=!0:(b=b.match(/^([^;]+)(?:;\w+=(?:\w+|"[\w;,= ]+"))*$/i),b=(b==null?void 0:b.length)===2&&(/^image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp|x-icon|heic|heif|avif|x-ms-bmp)$/i.test(b[1])||/^video\/(?:3gpp|avi|mpeg|mpg|mp4|ogg|webm|x-flv|x-matroska|quicktime|x-ms-wmv)$/i.test(b[1])||
+/^audio\/(?:3gpp2|3gpp|aac|amr|L16|midi|mp3|mp4|mpeg|oga|ogg|opus|x-m4a|x-matroska|x-wav|wav|webm)$/i.test(b[1])||/^font\/[\w-]+$/i.test(b[1])));if(!b)throw Error("");a=URL.createObjectURL(a);return new Y(a)}var ma=/^\s*(?!javascript:)(?:[\w+.-]+:|[^:/?#]*(?:[/?#]|$))/i;function Z(a){if(a instanceof Y)if(a instanceof Y)a=a.h;else throw Error("");else a=ma.test(a)?a:void 0;return a};var na="alternate author bookmark canonical cite help icon license modulepreload next prefetch dns-prefetch prerender preconnect preload prev search subresource".split(" ");function oa(a){var b=ha.apply(1,arguments);if(b.length===0)return X(a[0]);for(var f=a[0],k=0;k<b.length;k++)f+=encodeURIComponent(b[k])+a[k+1];return X(f)};var pa=aa(["https://fonts.googleapis.com/css2?family=Google+Symbols:opsz,wght,FILL,GRAD,ROND@24,400,0,0,50&icon_names=link"]);
+(function(){function a(){if(!document.getElementById("dyn-img-link-styles-di-script")){var e=document.createElement("link");e.type="text/css";var d=oa(pa);if(d instanceof W){if(d instanceof W)d=d.g;else throw Error("");e.href=d.toString();e.rel="stylesheet"}else{if(na.indexOf("stylesheet")===-1)throw Error('TrustedResourceUrl href attribute required with rel="stylesheet"');d=Z(d);d!==void 0&&(e.href=d,e.rel="stylesheet")}document.head.appendChild(e);e=document.createElement("style");e.id="dyn-img-link-styles-di-script";
+e.textContent="\n      .dyn-img-link-wrapper-di-script {\n        anchor-scope: all;\n        display: contents;  /* behaves as though it isn't there for layout */\n        position: relative;\n      }\n\n      .dyn-img-link-wrapper-di-script img {\n        anchor-name: --photo;\n        display: block;\n        max-width: 100%;\n      }\n\n      .dyn-img-link-di-script {\n        background-color: rgba(0, 0, 0, 0.5);\n        border-radius: 9999px;\n        box-shadow: 0 1px 2px rgba(0,0,0,0.2);\n        color: white;\n        height: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);\n        padding: 4px;\n        position: absolute;\n        position-anchor: --photo;  /* tether to the nearest --photo */\n        position-area: bottom left;\n        transform: translate(110%, -110%);  /* pull it up & in a little */\n        transition: background-color 0.2s ease-in-out;\n        width: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);\n      }\n\n      .dyn-img-link-di-script:hover {\n        background-color: rgba(0, 0, 0, 0.8);\n      }\n\n      .dyn-img-link-di-script span {\n        font-size: 14px;\n        vertical-align: top;\n      }\n  ";
+document.head.appendChild(e)}}function b(e){var d,h,l,r,q,v;return S(function(n){switch(n.g){case 1:if(!e.startsWith("data:")){n.g=2;break}return P(n,fetch(e),3);case 3:return d=n.h,n.return(d.blob());case 2:h=new URL(e+"=s1024"),h.searchParams.set("alr","yes"),l=0;case 4:if(!(l<5)){n.g=6;break}return P(n,fetch(h.toString(),{credentials:"include"}),7);case 7:r=n.h;if(!r.ok)throw Error("Fetch using ALR received not OK response");q=void 0;if((q=r.headers.get("content-type"))==null?0:q.startsWith("text/plain")){n.g=
+8;break}return P(n,r.blob(),9);case 9:return v=n.h,n.return(v);case 8:return P(n,r.text(),10);case 10:h=new URL(n.h);l++;n.g=4;break;case 6:throw Error("Fetch using ALR exceeded maximum number of redirects");}})}function f(e,d){e=e.split("+").join("%20");e=decodeURIComponent(e).trim();if(e in d)return d[e];if(decodeURIComponent(e).trim()in d)return d[decodeURIComponent(e).trim()];console.error("No image found for prompt: ",e);return null}function k(){var e,d,h,l,r,q,v,n;return S(function(D){e=H(Object.entries(IMG_GEN_REPLACE_MAP));
+for(d=e.next();!d.done;d=e.next())if(h=d.value,l=H(h),r=l.next().value,q=l.next().value,v=r,n=q,n.startsWith("data:text/plain;utf-8,")){var J=F;var x=n.slice(22);x=x.replace(/[^a-zA-Z0-9-_]/g," ");x="data:image/svg+xml,"+encodeURIComponent('<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">\n      <style>\n        .s { stroke:#E57373; stroke-width:30; fill:none; stroke-linecap:round }\n        .t { font:bold 68px Arial; text-anchor:middle; dominant-baseline:middle }\n      </style>\n      <g class="s">\n        <circle cx="256" cy="256" r="230"/>\n        <path d="M120 120L392 392M392 120L120 392"/>\n      </g>\n      <text class="t" x="50%" y="50%">'+
+x+"</text>\n    </svg>");J[v]=x}else w[v]=b(n);D.g=0})}function p(e){var d,h,l,r;return S(function(q){if(q.g==1){d=e.slice(12);if(h=f(d,F))return q.return(h);l=f(d,w);if(!l)return console.error("No image found for prompt: ",d),q.return("");r=la;return P(q,l,2)}return q.return(r(q.h).toString())})}function u(e){var d,h;return S(function(l){if(l.g==1)return(d=e.getAttribute("src"))&&d.startsWith("/gen?prompt=")?P(l,p(d),2):l.return();h=l.h;if(!h)return l.return();e.src=h;l.g=0})}function c(e){var d,
+h,l,r,q,v,n,D,J,x,qa,V,G,A,N;return S(function(K){if(K.g==1)return P(K,u(e),2);d=e.getAttribute("src");if(!d||!d.startsWith("/image?query="))return K.return();h=d.slice(13);l=f(h,IMG_SEARCH_REPLACE_MAP);if(!l)return console.error("no image found for query: ",h),K.return();r=H(l);q=r.next().value;v=r.next().value;n=q;D=v;e.src!==n&&(e.src=n);J=window.getComputedStyle(e);if(qa=(x=e.parentElement)&&x.classList.contains("dyn-img-link-wrapper-di-script")){if(V=x.querySelector(".dyn-img-link-di-script")){var L=
+Z(D);L!==void 0&&(V.href=L);V.title="Image Source: "+D}x.style.borderRadius=J.borderRadius}else G=document.createElement("div"),G.className="dyn-img-link-wrapper-di-script",G.style.borderRadius=J.borderRadius,A=document.createElement("a"),A.className="dyn-img-link-di-script",A.target="_blank",A.rel="noopener noreferrer",L=Z(D),L!==void 0&&(A.href=L),A.title="Image Source: "+D,N=document.createElement("span"),N.className="google-symbols",N.textContent="link",A.appendChild(N),e.parentNode&&(e.parentNode.insertBefore(G,
+e),G.appendChild(e),G.appendChild(A));K.g=0})}function g(e){var d,h,l,r;return S(function(q){if(q.g==1){if(!(e instanceof HTMLElement))return q.return();d=e;h=window.getComputedStyle(d);if(!h.backgroundImage||h.backgroundImage==="none")return q.return();var v=h.backgroundImage.match(/url\(['"]?(.*?)['"]?\)/);v=v?v[1]:null;if(document.baseURI&&v&&!v.startsWith("/")){var n=(new URL(document.baseURI)).origin;v.startsWith(n)&&(v=v.replace(n,""))}return(l=v)&&l.startsWith("/gen?prompt=")?P(q,p(l),2):q.return()}r=
+q.h;if(!r)return q.return();d.style.backgroundImage="url('"+r+"')";q.g=0})}function m(){(new MutationObserver(function(e){e=H(e);for(var d=e.next();!d.done;d=e.next())d=d.value,d.type==="childList"&&d.addedNodes.length>0?d.addedNodes.forEach(function(h){h.nodeType===Node.ELEMENT_NODE&&(g(h).catch(function(l){console.error("Error setting backgroundImage",l)}),h.tagName==="IMG"?c(h).catch(function(l){console.error("Error processing image",l)}):h.querySelectorAll&&(h.querySelectorAll("*").forEach(function(l){g(l).catch(function(r){console.error("Error setting backgroundImage",
+r)})}),h.querySelectorAll("img").forEach(function(l){c(l).catch(function(r){console.error("Error processing image",r)})})))}):d.type==="attributes"&&d.attributeName==="src"?d.target.nodeType===Node.ELEMENT_NODE&&d.target.tagName==="IMG"&&c(d.target).catch(function(h){console.error("Error processing image",h)}):d.type==="attributes"&&d.attributeName==="style"&&d.target.nodeType===Node.ELEMENT_NODE&&g(d.target).catch(function(h){console.error("Error setting backgroundImage",h)})})).observe(document.body,
+{attributes:!0,attributeFilter:["src","style"],childList:!0,subtree:!0})}function t(){return S(function(e){k();a();document.querySelectorAll("img").forEach(function(d){c(d).catch(function(h){console.error("Error processing image",h)})});document.querySelectorAll("*").forEach(function(d){g(d).catch(function(h){console.error("Error setting backgroundImage",h)})});m();e.g=0})}var w={};var F={};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",function(){t()}):t()})();}).call(this);
+
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The French Laundry Menu Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Roboto:400,700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f7f5;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .course-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .faded-text {
+            color: #9ca3af;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.mx-auto{margin-left:auto;margin-right:auto}.mb-6{margin-bottom:1.5rem}.mr-4{margin-right:1rem}.mt-12{margin-top:3rem}.mb-4{margin-bottom:1rem}.mt-4{margin-top:1rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-48{height:12rem}.w-16{width:4rem}.w-full{width:100%}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-8{gap:2rem}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.object-cover{object-fit:cover}.p-6{padding:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.text-center{text-align:center}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}</style><link type="text/css" href="https://fonts.googleapis.com/css2?family=Google+Symbols:opsz,wght,FILL,GRAD,ROND@24,400,0,0,50&amp;icon_names=link" rel="stylesheet"><style id="dyn-img-link-styles-di-script">
+      .dyn-img-link-wrapper-di-script {
+        anchor-scope: all;
+        display: contents;  /* behaves as though it isn't there for layout */
+        position: relative;
+      }
+
+      .dyn-img-link-wrapper-di-script img {
+        anchor-name: --photo;
+        display: block;
+        max-width: 100%;
+      }
+
+      .dyn-img-link-di-script {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 9999px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        color: white;
+        height: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        padding: 4px;
+        position: absolute;
+        position-anchor: --photo;  /* tether to the nearest --photo */
+        position-area: bottom left;
+        transform: translate(110%, -110%);  /* pull it up & in a little */
+        transition: background-color 0.2s ease-in-out;
+        width: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+      }
+
+      .dyn-img-link-di-script:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .dyn-img-link-di-script span {
+        font-size: 14px;
+        vertical-align: top;
+      }
+  </style></head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-4xl font-bold text-gray-800">The French Laundry</h1>
+                    <p class="text-gray-600">An Exploration of the Tasting Menus of October 17, 2025</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 9999px;"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEYD7sW7nL3yN2S9ruK1h0oLpaQpGZkrvILBjRZj8-tg9A7Kp2QclY6PiqIsjj" alt="Chef Thomas Keller" class="w-16 h-16 rounded-full mr-4 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://thomaskeller.com/biography/" title="Image Source: https://thomaskeller.com/biography/"><span class="google-symbols">link</span></a></div>
+                    <div>
+                        <p class="text-lg font-semibold text-gray-800">Thomas Keller</p>
+                        <p class="text-sm text-gray-600">Chef / Proprietor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Chef's Tasting Menu</h2>
+                <div id="non-veg-menu" class="space-y-6">
+                    <!-- Course cards will be injected here by JavaScript -->
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTd9ZbB3SysuPSxmjpFKGOyba55nBPa9vRYZKW1NwonC9MIdC0TC_SD3-F7Owui" alt="" oysters="" and="" pearls""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://parkerhallberg.com/oysters-and-pearls/" title="Image Source: https://parkerhallberg.com/oysters-and-pearls/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">"OYSTERS AND PEARLS"</h3>
+                        <p class="text-gray-600 mb-4">"Sabayon" of Pearl Tapioca with Island Creek Oysters and Regiis Ova Caviar</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A signature dish of Chef Thomas Keller. The "sabayon" is a light, frothy custard made from egg yolks, providing a rich and creamy base. Pearl tapioca adds a delightful chewy texture. Island Creek Oysters bring a briny, fresh flavor of the sea, while the Regiis Ova Caviar, a high-quality sturgeon roe, offers a nutty, buttery, and slightly salty finish, with a satisfying pop.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-c2CntCDEOLIVu2KB6ZedEY1oGIYdQtVZl37XBU_3AiCOqhQDZ7Y0FpS674WH" alt="GARDEN SUNCHOKE SALAD" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://www.loveandlemons.com/brussels-sprout-sunchoke-salad/" title="Image Source: https://www.loveandlemons.com/brussels-sprout-sunchoke-salad/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">GARDEN SUNCHOKE SALAD</h3>
+                        <p class="text-gray-600 mb-4">Sunchoke "Hash Brown," Charred Bitter Chicories, Sweetheart Farms Pomegranate and Medjool Date Dressing</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>This dish highlights the sunchoke, a tuber with a nutty, slightly sweet flavor reminiscent of artichoke hearts. It's prepared as a crispy "hash brown" for textural contrast. Charred chicories add a pleasant bitterness, balanced by the sweet and tart pomegranate seeds and a rich, fruity dressing made from Medjool dates.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTa5uS4ydP7GGU4rHVLPVOmnjJ5WqZUrP81r_5V3f7zu64T-Vb11kJFQhjmQjVw" alt="" rouelle"="" of="" atlantic="" dover="" sole"="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://thehappyfoodie.co.uk/recipes/dover-sole-a-la-meuniere/" title="Image Source: https://thehappyfoodie.co.uk/recipes/dover-sole-a-la-meuniere/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">"ROUELLE" OF ATLANTIC DOVER SOLE</h3>
+                        <p class="text-gray-600 mb-4">"Pommes Purée," Nasturtium Shoots and Preserved Cabbage "Bouillon"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A "rouelle" is a round slice of meat or fish. Here, delicate Dover sole, known for its firm texture and mild, sweet flavor, is rolled and cooked. It's served with a classic smooth and buttery potato purée ("pommes purée"). Nasturtium shoots add a peppery note, and the preserved cabbage bouillon provides a savory, slightly acidic broth.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu7td83lF5jRV2OrymbyyPP_91uVZ1IhkaXgMuHAxqFliKwjD5kkkKT-9M7ytz" alt="NOVA SCOTIA LOBSTER" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://truffeshenras.com/en/blogs/dishes/lobster-with-truffle" title="Image Source: https://truffeshenras.com/en/blogs/dishes/lobster-with-truffle"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">NOVA SCOTIA LOBSTER</h3>
+                        <p class="text-gray-600 mb-4">Braised Garden Celery, Sweetheart Farms Satsuma Mandarin "Pâte de Fruit," Creamy Celery Broth and Shaved Burgundy Truffle</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>Sweet and succulent Nova Scotia lobster is paired with braised celery for a subtle, aromatic crunch. A "pâte de fruit," a traditional French confection similar to a firm fruit jelly, made from Satsuma mandarin, adds a burst of citrusy sweetness. The dish is brought together with a creamy celery broth and finished with the earthy, musky aroma of shaved Burgundy truffle.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXnLvUZ2epJAC8h0-Y0NX-cL7x-wjvAtyIQAKLM92vB1YJq4xb6K8YXW0dJiQK" alt="" bread="" and="" butter""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://preppykitchen.com/brioche-bread/" title="Image Source: https://preppykitchen.com/brioche-bread/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">"BREAD AND BUTTER"</h3>
+                        <p class="text-gray-600 mb-4">Laminated Brioche and Hilary Haigh's Animal Farm Butter</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A deceptively simple course that showcases exceptional ingredients. The laminated brioche is a rich, buttery bread with flaky layers, similar to a croissant. It's served with a high-quality, artisanal butter from Animal Farm, known for its rich flavor and creamy texture.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNy21bElpD_Vg38xCw-gmG4DWKzx_htE6pc-WG8rMEXvfIgnAoYF619Yd-0pKr" alt="APPLEWOOD SMOKED FOUR STORY HILL FARM POULARDE" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://www.laurasummers.co.uk/2021/07/04/poularde-a-la-bourgeoise-recipe/" title="Image Source: https://www.laurasummers.co.uk/2021/07/04/poularde-a-la-bourgeoise-recipe/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">APPLEWOOD SMOKED FOUR STORY HILL FARM POULARDE</h3>
+                        <p class="text-gray-600 mb-4">Marsh Hen Mill Polenta, Hakurei Turnips and Garden Sage "Gastrique"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A "poularde" is a fattened hen, resulting in a tender, flavorful, and moist meat. It is smoked with applewood for a subtle smoky flavor. Served with creamy polenta from Marsh Hen Mill, sweet and delicate Hakurei turnips, and a "gastrique" - a sweet and sour sauce made with caramelized sugar and vinegar, infused with aromatic garden sage.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu2mayJflqxq0yEr3rAouYn0njFIN6BVSQyCTDda4IoBLHj-i9eE0tFypZ5yEM" alt="HERB ROASTED " prime="" rib"="" of="" elysian="" fields="" farm="" lamb"="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/grilling/comments/18r8n6y/enough_prime_rib_pics_i_made_lamb_for_xmas_who/" title="Image Source: https://www.reddit.com/r/grilling/comments/18r8n6y/enough_prime_rib_pics_i_made_lamb_for_xmas_who/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">HERB ROASTED "PRIME RIB" OF ELYSIAN FIELDS FARM LAMB</h3>
+                        <p class="text-gray-600 mb-4">Crispy Broccoli "Dumpling," "Boudin Noir" and "Moroccan Olive Jus"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>Elysian Fields Farm is renowned for its high-quality lamb. The "prime rib" cut is herb-roasted to perfection. It is accompanied by a crispy broccoli dumpling and "boudin noir," a traditional French blood sausage with a rich, earthy flavor. A "jus" (a light gravy) made with Moroccan olives adds a savory and slightly briny component.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCT8PAZE4VBJCtthnJHzNG5XkYDaW7877_SWwNS5IjSZcYwzARAwRmGTPzKSe_" alt="ALBERT KRAUS" alp="" blossom""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://www.kaeskuche.com/product/alp-blossom/" title="Image Source: https://www.kaeskuche.com/product/alp-blossom/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">ALBERT KRAUS" ALP BLOSSOM"</h3>
+                        <p class="text-gray-600 mb-4">Pearson Farms Pecan "Pancake" and Barrel Aged Maple "Whip"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>Alp Blossom is a semi-firm cheese from Germany, coated in dried herbs and flowers, which impart a floral, herbaceous aroma and flavor. It is served with a pecan pancake and a light, airy whip of barrel-aged maple syrup, creating a beautiful balance of savory, nutty, and sweet.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnuPKEk6qWz1bFzXMqefnfkhhUS5iLYQgwFaUAnP2tqjUk59mzcIvSJ9Qu4yFa" alt="K&amp;J ORCHARDS BARTLETT PEAR" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://pompomcooks.com/creme-fraiche-panna-cotta-with-poached-pears-sesame-brittle/" title="Image Source: https://pompomcooks.com/creme-fraiche-panna-cotta-with-poached-pears-sesame-brittle/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">K&amp;J ORCHARDS BARTLETT PEAR</h3>
+                        <p class="text-gray-600 mb-4">Cardamom "Panna Cotta" and Young Ginger "Crouton"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A refreshing dessert featuring Bartlett pears from K&amp;J Orchards. The pear is paired with a smooth, creamy "panna cotta" (an Italian dessert of sweetened cream) infused with the warm, aromatic spice of cardamom. A "crouton" made from young ginger adds a surprising and pleasant spicy crunch.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH2MUUnQqG5rJOkQlMBX-ZyvZJXPHEa84Sa1HMxdZsJySplIOmxk2OgzMeU9Sp" alt="GENMAICHA TEA ICE CREAM" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://nioteas.com/blogs/japanese-teas/genmaicha-ice-cream" title="Image Source: https://nioteas.com/blogs/japanese-teas/genmaicha-ice-cream"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">GENMAICHA TEA ICE CREAM</h3>
+                        <p class="text-gray-600 mb-4">Gravenstein Apple "Compote" and Miso Caramel</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>Genmaicha is a Japanese green tea with roasted brown rice, giving it a nutty, toasty flavor. This is incorporated into a creamy ice cream. It's served with a "compote" (fruit cooked in syrup) of Gravenstein apples, known for their tartness, and a miso caramel that adds a unique savory, umami-rich sweetness.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGlXPFnGmJsbipH8MZqCZhk5D_G9Xrdtl54AE3O6_x3Ord9JxMZ-h0t23fgsyA" alt="K+M 55% CHOCOLATE " mousse""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://plantcrush.co/2018/02/14/2-ingredient-chocolate-mousse-with-citrus-lychee/" title="Image Source: https://plantcrush.co/2018/02/14/2-ingredient-chocolate-mousse-with-citrus-lychee/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">K+M 55% CHOCOLATE "MOUSSE"</h3>
+                        <p class="text-gray-600 mb-4">Rich Cocoa Sponge and Lychee "Gelée"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A decadent dessert featuring K+M chocolate, a brand co-founded by Chef Keller. The 55% chocolate mousse is rich and airy. It's paired with a cocoa sponge cake and a "gelée" (jelly) of lychee, which provides a fragrant, floral, and sweet counterpoint to the deep chocolate flavor.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMUEfuXlXpD4fEGZMi-OkUi7ohfmqyujbHS6NAPSjbOM58Ez70Bldzkjq5W3e7" alt="" mignardises""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://gastronomia.ca/en/product/sweet-petits-fours/" title="Image Source: https://gastronomia.ca/en/product/sweet-petits-fours/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">"MIGNARDISES"</h3>
+                        <p class="text-gray-600 mb-4">A selection of small, bite-sized desserts to conclude the meal.</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A traditional French way to end a fine dining experience, "mignardises" are an assortment of delicate pastries, chocolates, and other confections, showcasing the pastry team's skill and creativity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Tasting of Vegetables</h2>
+                <div id="veg-menu" class="space-y-6">
+                    <!-- Course cards will be injected here by JavaScript -->
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRH7hWmq8tfwsGfls5PEnvHea9bjOFf3RwjGnGzcWAVTlUNswvX8NHUsNTrUsbm" alt="" oysters="" and="" pearls""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://www.fooddeco.nl/vegan-oyster-with-an-avocado-pearl/" title="Image Source: https://www.fooddeco.nl/vegan-oyster-with-an-avocado-pearl/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">"OYSTERS AND PEARLS"</h3>
+                        <p class="text-gray-600 mb-4">Vidalia Onion-Tapioca "Ragoût," Poached Oyster Mushrooms and Quinoa "Caviar"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A vegetarian interpretation of the classic. The creamy base is a "ragoût" (a slow-cooked stew) of sweet Vidalia onions and pearl tapioca. Instead of oysters, this version uses poached oyster mushrooms, which have a delicate, savory flavor and a similar texture. Quinoa is used to create a "caviar" that mimics the pop and texture of the real thing.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMRDLDINuXrxoaOZHNNxvb3cWOSWdAVFmBFjVoGV0qalB7Ib7-sugYfZ4Jp30p" alt="SALT BAKED RUBY BEET " carpaccio""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://www.carolinescooking.com/beet-carpaccio/" title="Image Source: https://www.carolinescooking.com/beet-carpaccio/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">SALT BAKED RUBY BEET "CARPACCIO"</h3>
+                        <p class="text-gray-600 mb-4">K&amp;J Orchards Asian Pear, Bitter Chicories, Spiced Beet Dressing and Toasted Pine Nuts</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>Thinly sliced salt-baked beets create a "carpaccio" with an earthy sweetness. Crisp Asian pear from K&amp;J Orchards adds a juicy, refreshing element. Bitter chicories provide a sharp contrast, while a spiced beet dressing and toasted pine nuts for a nutty crunch round out the dish.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh-vRC-AZ3Lu_6Vu09NbBdW6jeM4sCOfaxypZLeampFr5N_QMWj6xubyuCOzZp" alt="GARDEN CAULIFLOWER " polonaise""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://www.riverford.co.uk/recipes/cauliflower-polonaise" title="Image Source: https://www.riverford.co.uk/recipes/cauliflower-polonaise"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">GARDEN CAULIFLOWER "POLONAISE"</h3>
+                        <p class="text-gray-600 mb-4">"Deviled Quail Eggs," Crushed Spanish Capers and Cauliflower "Gribiche"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>"Polonaise" is a classic garnish of breadcrumbs, herbs, and hard-boiled eggs. Here, it's reinterpreted with cauliflower. Deviled quail eggs add a creamy, rich component. A "gribiche" sauce, typically a cold egg sauce, is made with cauliflower, emulsified with oil and mustard, and finished with tangy capers.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPUVSJBN4-gvaiwCVHFVPY14jQ4ab9MLnDNIegHffmMC0vzUt08302x9FsY423" alt="WATSONVILLE ARTICHOKE " farci""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://cookingontheweekends.com/the-ultimate-stuffed-artichoke-recipe/" title="Image Source: https://cookingontheweekends.com/the-ultimate-stuffed-artichoke-recipe/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">WATSONVILLE ARTICHOKE "FARCI"</h3>
+                        <p class="text-gray-600 mb-4">Garden Sunchoke Crumble, Crispy Artichoke Flower and Masala Curry Emulsion</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>"Farci" means stuffed. A Watsonville artichoke is filled with a crumble made from nutty sunchokes. Crispy artichoke flower adds texture, and a fragrant masala curry emulsion provides a warm, spicy, and aromatic sauce.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXnLvUZ2epJAC8h0-Y0NX-cL7x-wjvAtyIQAKLM92vB1YJq4xb6K8YXW0dJiQK" alt="" bread="" and="" butter""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://preppykitchen.com/brioche-bread/" title="Image Source: https://preppykitchen.com/brioche-bread/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">"BREAD AND BUTTER"</h3>
+                        <p class="text-gray-600 mb-4">Laminated Brioche and Hilary Haigh's Animal Farm Butter</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A deceptively simple course that showcases exceptional ingredients. The laminated brioche is a rich, buttery bread with flaky layers, similar to a croissant. It's served with a high-quality, artisanal butter from Animal Farm, known for its rich flavor and creamy texture.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJgg6neVlDvs1ksNx3wMXBLPNz389-cQSaGmTAHMwoBNiz7zznxsKOAH0uyrU" alt="" farcellets="" de="" col""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://www.shutterstock.com/image-photo/cabbage-rolls-soup-2261406241" title="Image Source: https://www.shutterstock.com/image-photo/cabbage-rolls-soup-2261406241"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">"FARCELLETS DE COL"</h3>
+                        <p class="text-gray-600 mb-4">Cracked Hourani Wheat, Marinated Garden Cabbages and Garden Pepper "Consommé"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>"Farcellets de col" are small cabbage rolls. These are filled with cracked Hourani wheat, an ancient grain with a nutty, buttery flavor. They are served with marinated cabbage for an added layer of flavor and a light, clear "consommé" (broth) made from garden peppers.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8OAtgH6aVDCib933Mz1czlnP9K4mIsis55Y8fMz7cBvJjSlbLbUq7qF-KClak" alt="" dÉgustation"="" of="" garden="" winter="" pumpkin"="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://floridafruitgeek.com/2021/11/30/a-new-autumn-tradition-best-flavored-pumpkin-contests/" title="Image Source: https://floridafruitgeek.com/2021/11/30/a-new-autumn-tradition-best-flavored-pumpkin-contests/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">"DÉGUSTATION" OF GARDEN WINTER PUMPKIN</h3>
+                        <p class="text-gray-600 mb-4">Brussels Sprout Crisps, Pickled Red Pearl Onion and "Musquée de Provence au Poivre"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A "dégustation" is a tasting of a single ingredient in various forms. This dish features winter pumpkin, including the Musquée de Provence variety, a French heirloom with a dense, sweet flesh. It's prepared with a peppery element ("au poivre"), and served with crispy Brussels sprout leaves and tangy pickled red pearl onions.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpDnPgp5j4toR5rsCSYw_KIHFUuYtxF2lyu2Pa5oVwS9LF0kKvqwRcfzosLzg9" alt="TRIPLE CREAM BRIE CHEESE " terrine""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://www.tortarelli.com.br/terrine-de-queijo-brie-com-pesto-de-salsa-e-couli-de-framboesa/" title="Image Source: https://www.tortarelli.com.br/terrine-de-queijo-brie-com-pesto-de-salsa-e-couli-de-framboesa/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">TRIPLE CREAM BRIE CHEESE "TERRINE"</h3>
+                        <p class="text-gray-600 mb-4">Black Walnut "Barquette" and Garden Nasturtium Shoots</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A rich and creamy triple cream brie is formed into a "terrine" (a loaf-shaped dish). It is served in a "barquette," a small boat-shaped pastry, made with black walnuts for a nutty, slightly bitter flavor. Peppery nasturtium shoots provide a fresh contrast.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTPZnmMuSO-v1Grq3hJfC7wzseUKFotw370YksI-ggADnXiQUS4Nkb7DxNBh-R" alt="MEDLEY OF VALLEY GRAPES" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://www.cookiedoughandovenmitt.com/concord-grape-pie-5/" title="Image Source: https://www.cookiedoughandovenmitt.com/concord-grape-pie-5/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">MEDLEY OF VALLEY GRAPES</h3>
+                        <p class="text-gray-600 mb-4">Vine Leaf "Namelaka" and Champagne "Gelée"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A celebration of local grapes. The grapes are served with "namelaka," a creamy, rich preparation made with chocolate, cream, and milk, here infused with the flavor of vine leaves. A Champagne "gelée" (jelly) adds a touch of elegance and a light, effervescent quality.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNIPOpFBf_xLWfM6ipxbICk1tgG-tlRxv2PsG9oYw2crn5is0Djr4HaT0ElNLd" alt="GARDEN HONEY ICE CREAM" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://foolproofliving.com/homemade-vanilla-ice-cream/" title="Image Source: https://foolproofliving.com/homemade-vanilla-ice-cream/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">GARDEN HONEY ICE CREAM</h3>
+                        <p class="text-gray-600 mb-4">Bees Wax Crumble and Fermented Honey</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>This dessert showcases honey in multiple forms. A smooth ice cream made from garden honey is served with a crumble made from beeswax, adding a unique texture and aroma. Fermented honey provides a complex, slightly tangy sweetness.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4zq7FPYjKgvwPptJGuXNrgP27ckaf_Kka5uScSo0XG2epJnvb9B5W0MWRx43U" alt="70% GUANAJA CHOCOLATE " mousse""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://thefeedfeed.com/nilathetoughcookie/salted-caramel-chocolate-mousse" title="Image Source: https://thefeedfeed.com/nilathetoughcookie/salted-caramel-chocolate-mousse"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">70% GUANAJA CHOCOLATE "MOUSSE"</h3>
+                        <p class="text-gray-600 mb-4">Salted Fudge and Chocolate Caramel "Tuile"</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A rich mousse made with 70% Guanaja chocolate, known for its intense cocoa flavor. It is accompanied by a dense, chewy salted fudge and a "tuile," a thin, crispy wafer, made with chocolate and caramel for a delightful crunch.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <div class="dyn-img-link-wrapper-di-script" style="border-radius: 0px;"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMUEfuXlXpD4fEGZMi-OkUi7ohfmqyujbHS6NAPSjbOM58Ez70Bldzkjq5W3e7" alt="" mignardises""="" class="w-full h-48 object-cover"><a class="dyn-img-link-di-script" target="_blank" rel="noopener noreferrer" href="https://gastronomia.ca/en/product/sweet-petits-fours/" title="Image Source: https://gastronomia.ca/en/product/sweet-petits-fours/"><span class="google-symbols">link</span></a></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">"MIGNARDISES"</h3>
+                        <p class="text-gray-600 mb-4">A selection of small, bite-sized desserts to conclude the meal.</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>A traditional French way to end a fine dining experience, "mignardises" are an assortment of delicate pastries, chocolates, and other confections, showcasing the pastry team's skill and creativity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-12 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-600">
+            <p>© 2025 The French Laundry Menu Explorer. All information is based on the menus dated 10.17.2025.</p>
+             <p class="text-sm">This is an illustrative application. For official information, please visit <a href="https://www.thomaskeller.com/tfl" target="_blank" class="text-blue-600 hover:underline">The French Laundry website</a>.</p>
+        </div>
+    </footer>
+
+    <script>
+        const nonVegMenu = [
+            {
+                title: '"OYSTERS AND PEARLS"',
+                description: '"Sabayon" of Pearl Tapioca with Island Creek Oysters and Regiis Ova Caviar',
+                image: '/image?query=oysters%20and%20pearls%20dish',
+                explanation: `A signature dish of Chef Thomas Keller. The "sabayon" is a light, frothy custard made from egg yolks, providing a rich and creamy base. Pearl tapioca adds a delightful chewy texture. Island Creek Oysters bring a briny, fresh flavor of the sea, while the Regiis Ova Caviar, a high-quality sturgeon roe, offers a nutty, buttery, and slightly salty finish, with a satisfying pop.`
+            },
+            {
+                title: 'GARDEN SUNCHOKE SALAD',
+                description: 'Sunchoke "Hash Brown," Charred Bitter Chicories, Sweetheart Farms Pomegranate and Medjool Date Dressing',
+                image: '/image?query=sunchoke%20salad',
+                explanation: `This dish highlights the sunchoke, a tuber with a nutty, slightly sweet flavor reminiscent of artichoke hearts. It's prepared as a crispy "hash brown" for textural contrast. Charred chicories add a pleasant bitterness, balanced by the sweet and tart pomegranate seeds and a rich, fruity dressing made from Medjool dates.`
+            },
+            {
+                title: '"ROUELLE" OF ATLANTIC DOVER SOLE',
+                description: '"Pommes Purée," Nasturtium Shoots and Preserved Cabbage "Bouillon"',
+                image: '/image?query=dover%20sole%20dish',
+                explanation: `A "rouelle" is a round slice of meat or fish. Here, delicate Dover sole, known for its firm texture and mild, sweet flavor, is rolled and cooked. It's served with a classic smooth and buttery potato purée ("pommes purée"). Nasturtium shoots add a peppery note, and the preserved cabbage bouillon provides a savory, slightly acidic broth.`
+            },
+            {
+                title: 'NOVA SCOTIA LOBSTER',
+                description: 'Braised Garden Celery, Sweetheart Farms Satsuma Mandarin "Pâte de Fruit," Creamy Celery Broth and Shaved Burgundy Truffle',
+                image: '/image?query=lobster%20with%20truffle',
+                explanation: `Sweet and succulent Nova Scotia lobster is paired with braised celery for a subtle, aromatic crunch. A "pâte de fruit," a traditional French confection similar to a firm fruit jelly, made from Satsuma mandarin, adds a burst of citrusy sweetness. The dish is brought together with a creamy celery broth and finished with the earthy, musky aroma of shaved Burgundy truffle.`
+            },
+            {
+                title: '"BREAD AND BUTTER"',
+                description: "Laminated Brioche and Hilary Haigh's Animal Farm Butter",
+                image: '/image?query=brioche%20and%20butter',
+                explanation: `A deceptively simple course that showcases exceptional ingredients. The laminated brioche is a rich, buttery bread with flaky layers, similar to a croissant. It's served with a high-quality, artisanal butter from Animal Farm, known for its rich flavor and creamy texture.`
+            },
+            {
+                title: 'APPLEWOOD SMOKED FOUR STORY HILL FARM POULARDE',
+                description: 'Marsh Hen Mill Polenta, Hakurei Turnips and Garden Sage "Gastrique"',
+                image: '/image?query=smoked%20poularde%20dish',
+                explanation: `A "poularde" is a fattened hen, resulting in a tender, flavorful, and moist meat. It is smoked with applewood for a subtle smoky flavor. Served with creamy polenta from Marsh Hen Mill, sweet and delicate Hakurei turnips, and a "gastrique" - a sweet and sour sauce made with caramelized sugar and vinegar, infused with aromatic garden sage.`
+            },
+            {
+                title: 'HERB ROASTED "PRIME RIB" OF ELYSIAN FIELDS FARM LAMB',
+                description: 'Crispy Broccoli "Dumpling," "Boudin Noir" and "Moroccan Olive Jus"',
+                image: '/image?query=lamb%20prime%20rib',
+                explanation: `Elysian Fields Farm is renowned for its high-quality lamb. The "prime rib" cut is herb-roasted to perfection. It is accompanied by a crispy broccoli dumpling and "boudin noir," a traditional French blood sausage with a rich, earthy flavor. A "jus" (a light gravy) made with Moroccan olives adds a savory and slightly briny component.`
+            },
+            {
+                title: 'ALBERT KRAUS" ALP BLOSSOM"',
+                description: 'Pearson Farms Pecan "Pancake" and Barrel Aged Maple "Whip"',
+                image: '/image?query=alp%20blossom%20cheese%20dish',
+                explanation: `Alp Blossom is a semi-firm cheese from Germany, coated in dried herbs and flowers, which impart a floral, herbaceous aroma and flavor. It is served with a pecan pancake and a light, airy whip of barrel-aged maple syrup, creating a beautiful balance of savory, nutty, and sweet.`
+            },
+            {
+                title: 'K&J ORCHARDS BARTLETT PEAR',
+                description: 'Cardamom "Panna Cotta" and Young Ginger "Crouton"',
+                image: '/image?query=pear%20panna%20cotta',
+                explanation: `A refreshing dessert featuring Bartlett pears from K&J Orchards. The pear is paired with a smooth, creamy "panna cotta" (an Italian dessert of sweetened cream) infused with the warm, aromatic spice of cardamom. A "crouton" made from young ginger adds a surprising and pleasant spicy crunch.`
+            },
+            {
+                title: 'GENMAICHA TEA ICE CREAM',
+                description: 'Gravenstein Apple "Compote" and Miso Caramel',
+                image: '/image?query=genmaicha%20ice%20cream',
+                explanation: `Genmaicha is a Japanese green tea with roasted brown rice, giving it a nutty, toasty flavor. This is incorporated into a creamy ice cream. It's served with a "compote" (fruit cooked in syrup) of Gravenstein apples, known for their tartness, and a miso caramel that adds a unique savory, umami-rich sweetness.`
+            },
+            {
+                title: 'K+M 55% CHOCOLATE "MOUSSE"',
+                description: 'Rich Cocoa Sponge and Lychee "Gelée"',
+                image: '/image?query=chocolate%20mousse%20lychee',
+                explanation: `A decadent dessert featuring K+M chocolate, a brand co-founded by Chef Keller. The 55% chocolate mousse is rich and airy. It's paired with a cocoa sponge cake and a "gelée" (jelly) of lychee, which provides a fragrant, floral, and sweet counterpoint to the deep chocolate flavor.`
+            },
+            {
+                title: '"MIGNARDISES"',
+                description: 'A selection of small, bite-sized desserts to conclude the meal.',
+                image: '/image?query=mignardises%20pastries',
+                explanation: `A traditional French way to end a fine dining experience, "mignardises" are an assortment of delicate pastries, chocolates, and other confections, showcasing the pastry team's skill and creativity.`
+            }
+        ];
+
+        const vegMenu = [
+            {
+                title: '"OYSTERS AND PEARLS"',
+                description: 'Vidalia Onion-Tapioca "Ragoût," Poached Oyster Mushrooms and Quinoa "Caviar"',
+                image: '/image?query=vegetarian%20oysters%20and%20pearls',
+                explanation: `A vegetarian interpretation of the classic. The creamy base is a "ragoût" (a slow-cooked stew) of sweet Vidalia onions and pearl tapioca. Instead of oysters, this version uses poached oyster mushrooms, which have a delicate, savory flavor and a similar texture. Quinoa is used to create a "caviar" that mimics the pop and texture of the real thing.`
+            },
+            {
+                title: 'SALT BAKED RUBY BEET "CARPACCIO"',
+                description: 'K&J Orchards Asian Pear, Bitter Chicories, Spiced Beet Dressing and Toasted Pine Nuts',
+                image: '/image?query=beet%20carpaccio',
+                explanation: `Thinly sliced salt-baked beets create a "carpaccio" with an earthy sweetness. Crisp Asian pear from K&J Orchards adds a juicy, refreshing element. Bitter chicories provide a sharp contrast, while a spiced beet dressing and toasted pine nuts for a nutty crunch round out the dish.`
+            },
+            {
+                title: 'GARDEN CAULIFLOWER "POLONAISE"',
+                description: '"Deviled Quail Eggs," Crushed Spanish Capers and Cauliflower "Gribiche"',
+                image: '/image?query=cauliflower%20polonaise',
+                explanation: `"Polonaise" is a classic garnish of breadcrumbs, herbs, and hard-boiled eggs. Here, it's reinterpreted with cauliflower. Deviled quail eggs add a creamy, rich component. A "gribiche" sauce, typically a cold egg sauce, is made with cauliflower, emulsified with oil and mustard, and finished with tangy capers.`
+            },
+            {
+                title: 'WATSONVILLE ARTICHOKE "FARCI"',
+                description: 'Garden Sunchoke Crumble, Crispy Artichoke Flower and Masala Curry Emulsion',
+                image: '/image?query=stuffed%20artichoke%20dish',
+                explanation: `"Farci" means stuffed. A Watsonville artichoke is filled with a crumble made from nutty sunchokes. Crispy artichoke flower adds texture, and a fragrant masala curry emulsion provides a warm, spicy, and aromatic sauce.`
+            },
+            {
+                title: '"BREAD AND BUTTER"',
+                description: "Laminated Brioche and Hilary Haigh's Animal Farm Butter",
+                image: '/image?query=brioche%20and%20butter',
+                explanation: `A deceptively simple course that showcases exceptional ingredients. The laminated brioche is a rich, buttery bread with flaky layers, similar to a croissant. It's served with a high-quality, artisanal butter from Animal Farm, known for its rich flavor and creamy texture.`
+            },
+            {
+                title: '"FARCELLETS DE COL"',
+                description: 'Cracked Hourani Wheat, Marinated Garden Cabbages and Garden Pepper "Consommé"',
+                image: '/image?query=cabbage%20rolls%20consomme',
+                explanation: `"Farcellets de col" are small cabbage rolls. These are filled with cracked Hourani wheat, an ancient grain with a nutty, buttery flavor. They are served with marinated cabbage for an added layer of flavor and a light, clear "consommé" (broth) made from garden peppers.`
+            },
+            {
+                title: '"DÉGUSTATION" OF GARDEN WINTER PUMPKIN',
+                description: 'Brussels Sprout Crisps, Pickled Red Pearl Onion and "Musquée de Provence au Poivre"',
+                image: '/image?query=pumpkin%20degustation',
+                explanation: `A "dégustation" is a tasting of a single ingredient in various forms. This dish features winter pumpkin, including the Musquée de Provence variety, a French heirloom with a dense, sweet flesh. It's prepared with a peppery element ("au poivre"), and served with crispy Brussels sprout leaves and tangy pickled red pearl onions.`
+            },
+            {
+                title: 'TRIPLE CREAM BRIE CHEESE "TERRINE"',
+                description: 'Black Walnut "Barquette" and Garden Nasturtium Shoots',
+                image: '/image?query=brie%20terrine',
+                explanation: `A rich and creamy triple cream brie is formed into a "terrine" (a loaf-shaped dish). It is served in a "barquette," a small boat-shaped pastry, made with black walnuts for a nutty, slightly bitter flavor. Peppery nasturtium shoots provide a fresh contrast.`
+            },
+            {
+                title: 'MEDLEY OF VALLEY GRAPES',
+                description: 'Vine Leaf "Namelaka" and Champagne "Gelée"',
+                image: '/image?query=grape%20dessert',
+                explanation: `A celebration of local grapes. The grapes are served with "namelaka," a creamy, rich preparation made with chocolate, cream, and milk, here infused with the flavor of vine leaves. A Champagne "gelée" (jelly) adds a touch of elegance and a light, effervescent quality.`
+            },
+            {
+                title: 'GARDEN HONEY ICE CREAM',
+                description: 'Bees Wax Crumble and Fermented Honey',
+                image: '/image?query=honey%20ice%20cream',
+                explanation: `This dessert showcases honey in multiple forms. A smooth ice cream made from garden honey is served with a crumble made from beeswax, adding a unique texture and aroma. Fermented honey provides a complex, slightly tangy sweetness.`
+            },
+            {
+                title: '70% GUANAJA CHOCOLATE "MOUSSE"',
+                description: 'Salted Fudge and Chocolate Caramel "Tuile"',
+                image: '/image?query=dark%20chocolate%20mousse%20caramel',
+                explanation: `A rich mousse made with 70% Guanaja chocolate, known for its intense cocoa flavor. It is accompanied by a dense, chewy salted fudge and a "tuile," a thin, crispy wafer, made with chocolate and caramel for a delightful crunch.`
+            },
+            {
+                title: '"MIGNARDISES"',
+                description: 'A selection of small, bite-sized desserts to conclude the meal.',
+                image: '/image?query=mignardises%20pastries',
+                explanation: `A traditional French way to end a fine dining experience, "mignardises" are an assortment of delicate pastries, chocolates, and other confections, showcasing the pastry team's skill and creativity.`
+            }
+        ];
+
+        function createCourseCard(course) {
+            return `
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                    <img src="${course.image}" alt="${course.title}" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">${course.title}</h3>
+                        <p class="text-gray-600 mb-4">${course.description}</p>
+                        <button onclick="toggleExplanation(this)" class="text-blue-600 hover:underline">Read more</button>
+                        <div class="explanation hidden mt-4 text-gray-700">
+                            <p>${course.explanation}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function toggleExplanation(button) {
+            const explanation = button.nextElementSibling;
+            explanation.classList.toggle('hidden');
+            button.textContent = explanation.classList.contains('hidden') ? 'Read more' : 'Read less';
+        }
+
+        const nonVegMenuContainer = document.getElementById('non-veg-menu');
+        const vegMenuContainer = document.getElementById('veg-menu');
+
+        nonVegMenu.forEach(course => {
+            nonVegMenuContainer.innerHTML += createCourseCard(course);
+        });
+
+        vegMenu.forEach(course => {
+            vegMenuContainer.innerHTML += createCourseCard(course);
+        });
+    </script>
+
+
+
+</body></html>
